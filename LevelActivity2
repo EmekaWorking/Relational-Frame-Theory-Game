@@ -1,0 +1,38 @@
+package com.example.loginapp;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class LevelActivity2 extends AppCompatActivity {
+
+   Button mStartButton;
+   Button mMainButton;
+
+   @Override
+   protected void onCreate(Bundle savedInstanceState) {
+       super.onCreate(savedInstanceState);
+       setContentView(R.layout.activity_level2);
+       mStartButton  = (Button)findViewById(R.id.startButton);
+       mStartButton.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intToQuiz1 = new Intent(LevelActivity2.this, QuizActivity2.class);
+               startActivity(intToQuiz1 );
+           }
+       });
+
+       mMainButton = (Button)findViewById(R.id.mainButton);
+       mMainButton.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intToMain = new Intent(LevelActivity2.this, LevelsActivityPage.class);
+               startActivity(intToMain);
+           }
+       });
+
+   }
+}
