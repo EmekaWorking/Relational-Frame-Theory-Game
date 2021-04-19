@@ -1,0 +1,60 @@
+package com.example.loginapp;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class QuizBook2 extends AppCompatActivity {
+
+   // ONE STATEMENT 11
+   /// TWO STATEMENTS 4
+       // TWO STATEMENTS DIFFERENT ORDER 2
+       // TWO STATEMENTS WITH 3 VARIABLES 2
+   // QUESTION STATEMENTS FLIP ORDER 11
+
+   public static String[] statments = new String[]{
+           "XOH Is The same As MOX                   MOX Is The same As KOP",
+           "CAC Is The opposite To BOB               BOB Is The opposite TO TOX",
+           "YUB Is The same As JOL                   JOL Is The same As YUB",
+           "TIN Is The opposite To TAH               TAH Is The opposite To TIN",
+           "POL Is The same As VUB",
+           "TKL Is The opposite To YIO",
+           "LAR Is The same As XEB",
+           "ZEH Is The same As CIY",
+           "ERB Is The opposite To TUO",
+           "TOR Is The same As NAR",
+           "LEV Is The same As DED",
+           "ZUB Is The opposite To KIT",
+           "ZIK Is The same As POL",
+           "VEZ Is The opposite To XON",
+           "DOZ Is The opposite To VIV",
+
+   };
+
+
+   public static String [] questions = new String[]{
+           " How are XOH and KOP Related ",//1
+           " How are CAC and TOX Related ",//2
+           " How are JOL and YUB Related ",//3
+           " How are TAH and TIN Related ",//4
+           " How are VUB and POL Related ",//5
+           " How are YIO and TKL Related ",//6
+           " How are XEB and LAR Related ",//7
+           " How are ZEH and CIY Related ",//8
+           " How are TUO and ERB Related ",//9
+           " How are NAR and TOR Related ",//10
+           " How are DED and LEV Related ",//11
+           " How are KIT and ZUB Related ",//12
+           " How are POL and ZIK Related ",//13
+           " How are XON and VEZ Related ",//14
+           " How are VIV and DOZ Related ",//15
+
+
+   };
+
+   public static boolean[] answers = new boolean[]{
+           true , true ,true , false , true ,false , true , true , false , true , true , false , true , false , false
+
+   };
+
+}
