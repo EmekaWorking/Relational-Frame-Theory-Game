@@ -1,0 +1,54 @@
+package com.example.loginapp;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class QuizBook1 extends AppCompatActivity {
+
+   public static String[] statments = new String[]{
+           "XOH Is The same As MOX",
+           "CAH Is The opposite TO JOB",
+           "PUB Is The same As LOL",
+           "JIN Is The opposite TO TAH",
+           "KOL Is The same As VUB",
+           "TKL Is The same As YIO",
+           "LAR Is The same As XEB",
+           "CIY Is The same As ZEH",
+           "TUO Is The same As ERB",
+           "NAR Is The same As TOR",
+           "DED Is The same As LEV",
+           "RIK Is The opposite TO ZUB",
+           "POL Is The same As ZIK",
+           "XON Is The opposite TO VEZ",
+           "VIV Is The opposite TO DOZ",
+
+   };
+
+
+   public static String [] questions = new String[]{
+           " How are XOH and MOX Related ",
+           " How are CAH and JOB Related ",
+           " How are PUB and LOL Related ",
+           " How are JIN and TAH Related ",
+           " How are KOL and VUB Related ",
+           " How are TKL and YIO Related ",
+           " How are LAR and XEB Related ",
+           " How are CIY and ZEH Related ",
+           " How are TUO and ERB Related ",
+           " How are NAR and TOR Related ",
+           " How are DED and LEV Related ",
+           " How are RIK and ZUB Related ",
+           " How are POL and ZIK Related ",
+           " How are XON and VEZ Related ",
+           " How are VIV and DOZ Related ",
+
+
+   };
+
+   public static boolean[] answers = new boolean[]{
+           true , false ,true , false , true ,true , true , true , true , true , true , false , true , false , false
+
+   };
+
+}
