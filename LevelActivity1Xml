@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".LevelActivity1">
+
+   <TextView
+       android:id="@+id/Levelh"
+       android:layout_margin="16dp"
+       android:fontFamily="casual"
+       android:textColor="#000"
+       android:padding="5dp"
+       android:textSize="24dp"
+       android:textAlignment="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Level 1"/>
+
+   <TextView
+   android:id="@+id/instructions"
+   android:fontFamily="casual"
+   android:layout_margin="1dp"
+   android:textColor="#000"
+   android:padding="16dp"
+   android:textSize="20sp"
+   android:textAlignment="center"
+   android:text="Instructions"
+   android:layout_below="@+id/Levelh"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"/>
+
+   <TextView
+       android:id="@+id/explain"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/instructions"
+       android:layout_margin="10dp"
+       android:layout_marginTop="4dp"
+       android:fontFamily="casual"
+       android:padding="16dp"
+       android:text="You'll be presented with nonsense syllables and a question about how these syllables relate to each other. Answer by selecting the relationship that best describes the syllables.."
+       android:textAlignment="center"
+       android:textColor="#000"
+       android:textSize="20sp" />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Start Quiz"
+       android:id="@+id/startButton"
+       android:textStyle="bold"
+       android:textColor="#fff"
+       android:padding="34dp"
+       android:textSize="20dp"
+       android:fontFamily = "casual"
+       android:background="#4CAF50"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@+id/explain" />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Main Menu"
+       android:id="@+id/mainButton"
+       android:textStyle="bold"
+       android:textColor="#fff"
+       android:padding="34dp"
+       android:textSize="20dp"
+       android:fontFamily = "casual"
+       android:background="#4CAF50"
+       android:layout_centerHorizontal="true"
+       android:layout_margin="16dp"
+       android:layout_below="@+id/startButton" />
+
+
+
+
+
+
+</RelativeLayout>
