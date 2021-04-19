@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".ResultsActivity1">
+
+   <TextView
+       android:id="@+id/Levelh"
+       android:layout_margin="16dp"
+       android:fontFamily="casual"
+       android:textColor="#000"
+       android:padding="5dp"
+       android:textSize="24dp"
+       android:textAlignment="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Level 1"/>
+
+   <TextView
+       android:id="@+id/grade"
+       android:layout_margin="16dp"
+       android:fontFamily="casual"
+       android:textColor="#000"
+       android:padding="16dp"
+       android:textSize="24dp"
+       android:textAlignment="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Congratulations"
+       android:layout_below="@id/Levelh"/>
+
+   <TextView
+       android:id="@+id/outOf"
+       android:fontFamily="casual"
+       android:layout_margin="16dp"
+       android:textColor="#000"
+       android:padding="16dp"
+       android:textSize="20sp"
+       android:textAlignment="center"
+       android:text="You Scored 15/15"
+       android:layout_below="@+id/grade"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+   <Button
+       android:layout_centerVertical="true"
+       android:fontFamily="casual"
+       android:background="#4CAF50"
+       android:textColor="#fff"
+       android:layout_margin="4dp"
+       android:padding="34dp"
+       android:text="Replay Level"
+       android:id="@+id/retry1"
+       android:layout_below="@+id/outOf"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+   <Button
+       android:layout_centerVertical="true"
+       android:layout_alignParentRight="true"
+       android:fontFamily="casual"
+       android:background="#4CAF50"
+       android:textColor="#fff"
+       android:layout_margin="4dp"
+       android:padding="34dp"
+       android:text="Next Level"
+       android:id="@+id/nxtLevel"
+       android:layout_below="@+id/outOf"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+</RelativeLayout>
