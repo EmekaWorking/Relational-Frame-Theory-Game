@@ -1,0 +1,169 @@
+package com.example.loginapp;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+
+public class QuizActivity1 extends AppCompatActivity {
+
+   private TextView mQuestionno , mScoreView;
+   private TextView mStatement , mQuestions;
+   private Button mTrueButton , mFalseButton;
+
+   private boolean mAnswer;
+   private int mScore = 0 ;
+   private int mQuestionNumber = 0;
+   private int numberOfWrongQuestions = 0;
+
+
+   private  static final long COUNTDOWN_IN_MILLIS = 30000;
+   private ColorStateList textColorDefaultCd;
+   private  TextView textViewCountDown;
+
+   private CountDownTimer countDownTimer;
+   private long timeLeftInMillis;
+
+   ProgressBar progressBar;
+
+
+
+   @Override
+   protected void onCreate(Bundle savedInstanceState) {
+       super.onCreate(savedInstanceState);
+       setContentView(R.layout.activity_quiz1);
+
+       mScoreView = (TextView)findViewById(R.id.score);
+       mQuestionno = (TextView)findViewById(R.id.question);
+       mStatement = (TextView)findViewById(R.id.statement);
+       mQuestions = (TextView)findViewById(R.id.question);
+       mTrueButton = (Button)findViewById(R.id.sameButton);
+       mFalseButton = (Button)findViewById(R.id.oppositeButton);
+       progressBar = findViewById(R.id.progress);
+       textViewCountDown = findViewById(R.id.text_view_countDown);
+
+       textColorDefaultCd = textViewCountDown.getTextColors();
+
+       updateQuestion();
+
+       int x = ((mScore  )) * 100/ QuizBook1.questions.length ;
+       progressBar.setProgress(x);
+
+       //LOGIC FOR TRUE BUTTON
+       mTrueButton.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+
+               if (mAnswer == true){
+                   mScore++; //this updates the score int variable
+                   updateScore(mScore);//this converts the int variable to a string and adds it to mScoreView
+                   ProgressBar(mScore);//progress bar
+
+                   //Perform this check before you update the question
+                   if((mQuestionNumber) == QuizBook1.questions.length) {
+                       Intent i = new Intent(QuizActivity1.this, ResultsActivity1.class);
+                       Bundle bundle = new Bundle ();
+                       bundle.putInt("final Score", mScore);
+                       i.putExtras(bundle);
+                       QuizActivity1.this.finish();
+                       startActivity(i);
+
+                       //timeLeftInMillis = COUNTDOWN_IN_MILLIS;
+                       //startCountDown();
+                   }else{
+                       updateQuestion();
+                   }
+               }
+
+               //if user's answer is Wrong
+               else{
+                   Intent w = new Intent(QuizActivity1.this, ReplayActivity1.class);
+                   QuizActivity1.this.finish();
+                   startActivity(w);
+                   Bundle bundle = new Bundle ();
+                   bundle.putInt("final Score", mScore);
+                   w.putExtras(bundle);
+               }
+
+
+
+
+           }
+       });
+       //FALSE BUTTON
+       mFalseButton.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+
+               if (mAnswer == false){
+                   mScore++; //this updates the score int variable
+                   updateScore(mScore);//this converts the int variable to a string and adds it to mScoreView
+                   ProgressBar(mScore);
+
+                   //Perform this check before you update the question
+                   if((mQuestionNumber) == QuizBook1.questions.length) {
+                       Intent i = new Intent(QuizActivity1.this, ResultsActivity1.class);
+                       Bundle bundle = new Bundle ();
+                       bundle.putInt("final Score", mScore);
+                       i.putExtras(bundle);
+                       QuizActivity1.this.finish();
+                       startActivity(i);
+
+                   }else{
+                       updateQuestion();
+                   }
+               }
+               //if user's answer is Wrong
+               else{
+                   Intent w = new Intent(QuizActivity1.this, ReplayActivity1.class);
+                   QuizActivity1.this.finish();
+
+                   startActivity(w);
+                   Bundle bundle = new Bundle ();
+                   bundle.putInt("final Score", mScore);
+                   w.putExtras(bundle);
+               }
+
+
+
+           }
+       });
+
+
+
+   }
+
+
+
+   private void updateQuestion(){
+       mStatement.setText(QuizBook1.statments[mQuestionNumber]);
+       mQuestions.setText(QuizBook1.questions[mQuestionNumber]);
+       mAnswer = QuizBook1.answers[mQuestionNumber];
+       mQuestionNumber++;
+
+       //countDownTimer.cancel();
+
+   }
+
+   public void updateScore (int point){
+       mScoreView.setText( " Question: " + mScore + "/15" );
+
+   }
+
+   public void ProgressBar(int point){
+
+       int x = ((mScore + 1 )) * 94/ QuizBook1.questions.length ;
+       progressBar.setProgress(x);
+   }
+
+
+
+
+
+}
