@@ -1,0 +1,33 @@
+package com.example.loginapp;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class ReplayActivity2 extends AppCompatActivity {
+
+   Button mReplay1;
+
+   @Override
+   protected void onCreate(Bundle savedInstanceState) {
+       super.onCreate(savedInstanceState);
+       setContentView(R.layout.activity_replay2);
+
+
+       mReplay1 = (Button) findViewById(R.id.retry1);
+
+       mReplay1.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent repToQuiz2 = new Intent(ReplayActivity2.this, QuizActivity2.class);
+               startActivity(repToQuiz2);
+               ReplayActivity2.this.finish();
+           }
+       });
+
+   }
+
+}
