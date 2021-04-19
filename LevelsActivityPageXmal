@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:orientation="vertical"
+   tools:context=".LevelsActivityPage">
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   <Button
+       android:layout_marginLeft="4dp"
+       android:layout_marginRight="4dp"
+       android:fontFamily="casual"
+       android:textColor="#fff"
+       android:background="#4CAF50"
+       android:id="@+id/lv1"
+       android:text="Level 1"
+       android:layout_weight="1"
+       android:layout_width="0dp"
+       android:layout_margin="4dp"
+       android:padding="18dp"
+       android:layout_height="wrap_content"/>
+
+   <Button
+       android:layout_marginLeft="4dp"
+       android:layout_marginRight="4dp"
+       android:fontFamily="casual"
+       android:textColor="#fff"
+       android:background="#4CAF50"
+       android:id="@+id/lv2"
+       android:text="Level 2"
+       android:layout_weight="1"
+       android:layout_width="0dp"
+       android:layout_margin="4dp"
+       android:padding="18dp"
+       android:layout_height="wrap_content"/>
+
+   <Button
+       android:layout_marginLeft="4dp"
+       android:layout_marginRight="4dp"
+       android:fontFamily="casual"
+       android:textColor="#fff"
+       android:background="#4CAF50"
+       android:id="@+id/lv3"
+       android:text="Level 3"
+       android:layout_weight="1"
+       android:layout_width="0dp"
+       android:layout_margin="4dp"
+       android:padding="18dp"
+       android:layout_height="wrap_content"/>
+   </LinearLayout>
+
+
+   // 4-6
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <Button
+           android:layout_marginLeft="4dp"
+           android:layout_marginRight="4dp"
+           android:fontFamily="casual"
+           android:textColor="#fff"
+           android:background="#4CAF50"
+           android:id="@+id/lv4"
+           android:text="Level 4"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_margin="4dp"
+           android:padding="18dp"
+           android:layout_height="wrap_content"/>
+
+       <Button
+           android:layout_marginLeft="4dp"
+           android:layout_marginRight="4dp"
+           android:fontFamily="casual"
+           android:textColor="#fff"
+           android:background="#4CAF50"
+           android:id="@+id/lv5"
+           android:text="Level 5"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_margin="4dp"
+           android:padding="18dp"
+           android:layout_height="wrap_content"/>
+
+       <Button
+           android:layout_marginLeft="4dp"
+           android:layout_marginRight="4dp"
+           android:fontFamily="casual"
+           android:textColor="#fff"
+           android:background="#4CAF50"
+           android:id="@+id/lv6"
+           android:text="Level 6"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_margin="4dp"
+           android:padding="18dp"
+           android:layout_height="wrap_content"/>
+   </LinearLayout>
+
+   //7-9
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <Button
+           android:layout_marginLeft="4dp"
+           android:layout_marginRight="4dp"
+           android:fontFamily="casual"
+           android:textColor="#fff"
+           android:background="#4CAF50"
+           android:id="@+id/lv7"
+           android:text="Level 7"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_margin="4dp"
+           android:padding="18dp"
+           android:layout_height="wrap_content"/>
+
+       <Button
+           android:layout_marginLeft="4dp"
+           android:layout_marginRight="4dp"
+           android:fontFamily="casual"
+           android:textColor="#fff"
+           android:background="#4CAF50"
+           android:id="@+id/lv8"
+           android:text="Level 8"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_margin="4dp"
+           android:padding="18dp"
+           android:layout_height="wrap_content"/>
+
+       <Button
+           android:layout_marginLeft="4dp"
+           android:layout_marginRight="4dp"
+           android:fontFamily="casual"
+           android:textColor="#fff"
+           android:background="#4CAF50"
+           android:id="@+id/lv9"
+           android:text="Level 9"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_margin="4dp"
+           android:padding="18dp"
+           android:layout_height="wrap_content"/>
+
+
+
+   </LinearLayout>
+
+   //10-12
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <Button
+           android:layout_marginLeft="4dp"
+           android:layout_marginRight="4dp"
+           android:fontFamily="casual"
+           android:textColor="#fff"
+           android:background="#4CAF50"
+           android:id="@+id/lv10"
+           android:text="Level 10"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_margin="4dp"
+           android:padding="18dp"
+           android:layout_height="wrap_content"/>
+
+       <Button
+           android:layout_marginLeft="4dp"
+           android:layout_marginRight="4dp"
+           android:fontFamily="casual"
+           android:textColor="#fff"
+           android:background="#4CAF50"
+           android:id="@+id/lv11"
+           android:text="Level 11"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_margin="4dp"
+           android:padding="18dp"
+           android:layout_height="wrap_content"/>
+
+       <Button
+           android:layout_marginLeft="4dp"
+           android:layout_marginRight="4dp"
+           android:fontFamily="casual"
+           android:textColor="#fff"
+           android:background="#4CAF50"
+           android:id="@+id/lv12"
+           android:text="Level 12"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_margin="4dp"
+           android:padding="18dp"
+           android:layout_height="wrap_content"/>
+
+
+
+   </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
