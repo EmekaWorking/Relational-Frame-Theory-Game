@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".ReplayActivity1">
+
+   <TextView
+       android:id="@+id/unfortunately"
+       android:layout_margin="16dp"
+       android:fontFamily="casual"
+       android:textColor="#000"
+       android:padding="16dp"
+       android:textSize="24dp"
+       android:textAlignment="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Unfortunately You Failed"/>
+
+   <TextView
+       android:id="@+id/explain"
+       android:fontFamily="casual"
+       android:layout_margin="16dp"
+       android:textColor="#000"
+       android:padding="16dp"
+       android:textSize="20sp"
+       android:textAlignment="center"
+       android:text="To succeed You must complete All Questions correctly within the time limit"
+       android:layout_below="@+id/unfortunately"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+   <Button
+       android:layout_centerHorizontal="true"
+       android:fontFamily="casual"
+       android:background="#4CAF50"
+       android:textColor="#fff"
+       android:layout_margin="4dp"
+       android:padding="8dp"
+       android:text="Replay Level"
+       android:id="@+id/retry1"
+       android:layout_below="@+id/explain"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
